@@ -70,7 +70,7 @@ const WORD_LIST = [
 ]
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true)
+  const [] = useState(true)
   const [currentPassword, setCurrentPassword] = useState<GeneratedPassword>({
     password: "",
     strength: 0,
@@ -240,7 +240,6 @@ function App() {
     setCurrentPassword(newPassword)
   }, [generatePassword])
 
-  const strengthLabels = ["Very Weak", "Weak", "Fair", "Strong", "Very Strong"]
 
   return (
     <div className="min-h-screen bg-slate-900 text-gray-100">
